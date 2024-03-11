@@ -1,0 +1,18 @@
+{% extends "flights/layout.html"%}
+
+{% block title%}VIDEO{% endblock %}
+
+{% block body %}
+
+<h1 class="heading">Video</h1>
+
+<div class="container_1">
+    {% for video in videos %}
+    <div>
+    <p>{{ video.videoName|capfirst }}</p>
+    <iframe src="{{ video.video }}" allowfullscreen></iframe>
+    </div>
+        {% endfor %}
+</div>
+
+    {% endblock %}

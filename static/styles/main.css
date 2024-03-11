@@ -1,0 +1,39 @@
+.heading{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.container_1 p{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.flights_container{
+    text-align: center;
+}
+
+.booking{
+    text-align: center;
+    text-decoration: none;
+}
+
+@media  screen and (max-width: 480px) {
+    body{
+        background: #000;
+        color: white;
+    }
+
+    .container_1{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+

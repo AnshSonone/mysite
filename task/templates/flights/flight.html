@@ -1,0 +1,21 @@
+{% extends "flights/layout.html"%}
+
+{% block title%}FLIGHTS{% endblock %}
+
+{% block body %}
+<h1 class="heading">Flights</h1>
+
+<a class="booking" href="{% url 'upload' %}">Book Flight</a>
+
+
+{% for flight in flights %}
+<div class="flights_container">
+    <p>Passanger- {{ flight.user|capfirst }}</p>
+    <li class="line">{{ flight }}mins</li>
+</div>
+    {% empty %}
+    <p>No flights found</p>
+    {% endfor %}
+</div>
+
+    {% endblock %}
